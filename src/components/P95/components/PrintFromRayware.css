@@ -1,0 +1,209 @@
+.printFromRayware{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.p95Print__buttons{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow:hidden;
+  gap:4px;
+  position:sticky;
+}
+
+.p95Print__print{
+  text-align:center;
+}
+
+.p95Print__print p{
+  color:white;
+  font-size:1.2rem;
+  padding:20px 0;
+  background:#222;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background 0.2s ease;
+}
+
+.p95Print__print p:hover{
+  background:#555;
+}
+
+.p95Print__details{
+  color:white;
+  display:flex;
+  flex:1;
+  justify-content: center;
+  padding: 25px;
+}
+
+.p95Print__detailsContainer{
+  display:flex;
+  width:100%;
+  gap:30px;
+}
+
+.p95Print__detailsLeft{
+  background:white;
+  border-radius:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex:0.25;
+}
+
+.p95Print__detailsLeft img{
+  object-fit:contain;
+  height:75px;
+}
+
+.p95Print__detailsRight{
+  display:flex;
+  flex-direction:column;
+  flex:0.75;
+  justify-content:center;
+  gap:20px;
+}
+
+.p95Print__filename h3{
+  font-size:1.5rem;
+  font-weight:400;
+}
+
+.p95Print__progress{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:30px;
+}
+
+.p95Print__time{
+  display:flex;
+  background:#222;
+  padding:15px 10px;
+  border-radius:5px;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.p95Print__total {
+  flex:0.33
+}
+
+.p95Print__total h3{
+  font-weight:400;
+  font-size:1.3rem;
+}
+
+.p95Print__total h2{
+  font-weight:700;
+  font-size:1.25rem;
+}
+
+
+.p95Print__process h3{
+  font-weight:500;
+  font-size:1.3rem;
+}
+
+.p95Print__remaining{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.p95Print__remaining{
+  flex:0.33;
+}
+
+.p95Print__remaining h3{
+  font-weight:400;
+  font-size:1.3rem;
+}
+
+.p95Print__remaining h2{
+  font-weight:700;
+  font-size:1.25rem;
+}
+
+.p95Print__totalLayers{
+  background:#222;
+  padding:5px 0px;
+  border-radius:5px;
+  display:flex;
+  justify-content: center;
+}
+
+.p95Print__info{
+  display:flex;
+}
+
+.p95Print__resin{
+  display:flex;
+  align-items:center;
+  flex:0.68;
+  background:#555;
+  justify-content: center;
+  padding:8px 0;
+  font-size:1.4rem;
+  font-weight:300;
+  border-radius:5px;
+}
+
+.p95Print__resin h5{
+  font-weight:500;
+}
+
+.p95Print__microns{
+  flex:0.32;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.p95Print__microns h5{
+  font-size:1.2rem;
+  font-weight:500;
+}
+
+.p95Print__controls{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow:hidden;
+  gap:4px;
+  position:sticky;
+  color:white;
+}
+
+.p95Print__controls .control{
+  color:white;
+  font-size:1.2rem;
+  padding:17px 0;
+  background:#222;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background 0.2s ease;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+
+.p95Print__controls .control:hover{
+  background:#555;
+}
+
+.p95Print__cancel > .MuiSvgIcon-root{
+  color:red;
+  font-size:2rem;
+}
+
+.p95Print__layer > .MuiSvgIcon-root{
+  color:lightblue;
+  font-size:2rem;
+}
+
+.p95Print__pause > .MuiSvgIcon-root{
+  font-size:2rem;
+}

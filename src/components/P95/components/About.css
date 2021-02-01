@@ -1,0 +1,69 @@
+.about__container{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.about__header{
+  position:relative;
+  background:#333;
+  color:white;
+  padding:20px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.about__header h2{
+  font-weight:400;
+  font-size:1.4rem;
+}
+
+.about__back{
+  position:absolute;
+  left:2%;
+  display:flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+.about__back p{
+  margin-left:10px;
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.about__container{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.about__details{
+  width:83%;
+  display:flex;
+  flex-direction:column;
+  padding-top:30px;
+}
+
+.about__detail{
+  color:white;
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  border-bottom:1px solid rgba(255,255,255,0.4);
+  padding:20px 0;
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+.last{
+  border-bottom:none;
+}
+
+.about__nickname{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}

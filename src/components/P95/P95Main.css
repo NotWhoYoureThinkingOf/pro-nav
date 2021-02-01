@@ -1,0 +1,899 @@
+.p95Main{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  background:#111;
+}
+
+.p95Main__back{
+  position:absolute;
+  z-index:100;
+  left:2%;
+  top:2%;
+  color:white;
+}
+
+.p95Main__bg{
+  width:100%;
+  position:absolute;
+  z-index:90;
+  height:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.p95Main__logo{
+  position:absolute;
+  top:85%;
+  z-index:91;
+}
+
+.p95Main__logo img{
+  object-fit:contain;
+  height:50px;
+}
+
+.p95Main__bg img{
+  position:absolute;
+  object-fit:contain;
+  /* width:1920px; */
+  height:100%;
+  z-index:0;
+  filter:blur(10px);
+}
+
+.p95Main__usb{
+  position:absolute;
+  z-index:91;
+  right:10%;
+  top:35%;
+  border:5px solid white;
+  width: 200px;
+  background:black;
+  display:flex;
+  justify-content: center;
+  border-radius:15px;
+}
+
+.p95Main__usb img{
+  object-fit:contain;  
+  filter:drop-shadow(0px 2px 4px rgba(255,255,255,0.1));
+  padding:20px;
+}
+
+.p95Main__send{
+  position:absolute;
+  z-index:91;
+  left:8%;
+  top:40%;
+  border:5px solid white;
+  /* width:200px; */
+  background:black;
+  display:flex;
+  justify-content: center;
+  border-radius:15px;
+  color:white;
+}
+
+.p95Main__send h3{
+  padding:50px;
+  text-align:center;
+  font-size:1.5rem;
+}
+
+.p95Main__container{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.p95Main__screen{
+  z-index:100;
+  background: black;
+  border-radius: 15px;
+  height:550px;
+  width:800px;
+  border:5px solid white;
+  overflow-y:scroll;
+  position:relative;
+}
+
+
+
+.p95Main__screen::-webkit-scrollbar{
+  display:none;
+}
+
+.p95Main__buttons{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow:hidden;
+  gap:4px;
+  position:sticky;
+  top:0;
+  background:black;
+}
+
+.p95Main__print{
+  text-align:center;
+}
+
+.p95Main__print p{
+  color:white;
+  font-size:1.2rem;
+  padding:20px 0;
+  background:#222;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background 0.2s ease;
+}
+
+.p95Main__print p:hover{
+  background:#555;
+}
+
+.p95Main__details{
+  color: white;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items:center;
+  width:100%;
+  height:89%;
+  overflow:hidden;
+  padding:50px 0 40px;
+}
+
+.p95Main__detailsTop{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
+}
+
+.p95Main__detailsTop h2{
+  font-size:2.7rem;
+}
+
+.p95Main__detailsTop p{
+  opacity:0.7;
+  font-weight:300;
+  letter-spacing: 0.2px;
+}
+
+.p95Main__detailsCenter{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  border: 2px solid white;
+  padding:15px 80px;
+  border-radius:5px;
+
+}
+
+.p95Main__detailsBottom{
+  display:flex;
+  width:80%;
+  justify-content: space-between;
+}
+
+.p95Main__detailsWifi{
+  display:flex;
+  align-items: center;
+  gap:10px;
+}
+
+.p95Main__detailsWifi a{
+  color:white;
+  text-decoration:none;
+  font-size:1.15rem;
+  font-weight:bold;
+}
+
+.p95Main__detailsWifi > .MuiSvgIcon-root{
+  fill:lightblue;
+}
+
+.p95Main__detailsDash{
+  display:flex;
+  align-items: center;
+  gap:5px;
+  padding:5px;
+  text-decoration: none;
+}
+
+.p95Main__detailsDash h4{
+  cursor:pointer;
+  color:white;
+}
+
+.p95Main__detailsBottom h4{
+  font-size:1.15rem;
+}
+
+.p95Main__detailsDash > .MuiSvgIcon-root{
+  color:lightblue;
+}
+
+/* -----------SETTINGS------------ */
+
+.p95Main__settings{
+  color:white;
+  padding: 35px 60px;
+}
+
+.p95Main__update{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom:10px;
+  padding-bottom:10px;
+}
+
+.p95Main__updateContent{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  padding-bottom:20px;
+}
+
+.p95Main__update hr{
+  width:100%;
+  opacity:0.1;
+}
+
+.p95Main__updateLeft{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.p95Main__updateLeft h3{
+  font-size:1.7rem;
+}
+
+.p95Main__updateRight h5{
+  font-size:1.2rem;
+  background:#444;
+  padding:10px 20px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.p95Main__updateRight h5:hover{
+  background:#555;
+}
+
+.p95Main__updateLeft > .MuiSvgIcon-root{
+  font-size:2rem;
+  fill:lightgreen;
+}
+
+.p95Main__connectivityTitle{
+  display:flex;
+  align-items: center;
+  gap:10px;
+}
+
+.p95Main__connectivityTitle h3{
+  font-size:1.7rem;
+}
+
+.p95Main__connectivityTitle > .MuiSvgIcon-root{
+  fill:lightblue;
+  font-size:2rem;
+}
+
+.p95Main__connectivityOptions a{
+  color:white;
+  text-decoration: none;
+}
+
+.p95Main__setting{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding:20px 0;
+  border-bottom:1px solid rgba(255,255,255,0.1)
+}
+
+.p95Main__connection{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  width:100%;
+}
+
+.connection{
+  display:flex;
+  flex-direction:column !important;
+}
+
+.p95Main__hotspotDetails{
+  display:flex;
+  flex-direction: column;
+  padding: 20px 0 10px;
+}
+
+.p95Main__hotspotInfo{
+  display:flex;
+  flex-direction: column;
+  padding: 20px 0 0px;
+}
+
+.p95Main__hotspotName{
+  display:flex;
+  align-items: center;
+  margin-bottom:2px;
+  font-size:1.1rem;
+  font-weight:500;
+}
+
+.p95Main__hotspotName > .MuiSvgIcon-root{
+  color:#5cb85c;
+}
+
+.hotspotName{
+  flex:1;
+  margin-left:15px;
+}
+
+.p95Main__hotspotPassword{
+  display:flex;
+  align-items: center;
+  font-size:1.1rem;
+  font-weight:500;
+}
+
+.hotspotPassword{
+  flex:1;
+  margin-left:15px;
+}
+
+.last{
+  border:none;
+}
+
+.p95Main__setting h4{
+  font-size:1.2rem;
+}
+
+.p95Main__settingOption{
+  display:flex;
+  align-items:center;
+  gap:2px;
+}
+
+.p95Main__settingOption a{
+  color:white;
+  text-decoration:none;
+  font-size:1.15rem;
+  font-weight:bold;
+}
+
+.p95Main__settingOption h5{
+  padding: 10px;
+  background:rgba(255,255,255,0.1);
+  border-radius:5px;
+  font-size:1rem;
+  transition:all 0.1 ease;
+  cursor:pointer;
+}
+
+.p95Main__settingOption h5:hover{
+  background:#555;
+}
+
+.language p{
+  font-size:1.15rem;
+  font-weight:bold;
+}
+
+.selectedOption{
+  background:#555 !important;
+}
+
+.p95Main__general{
+  color:white;
+  padding: 0px 60px;
+}
+
+.p95Main__general a{
+  color:white;
+  text-decoration: none;
+}
+
+.p95Main__generalTitle{
+  display:flex;
+  align-items: center;
+  gap:10px;
+}
+
+.p95Main__generalTitle h3{
+  font-size:1.8rem;
+}
+
+.p95Main__generalTitle > .MuiSvgIcon-root{
+  background:#5cb85c;
+  fill:black;
+  border-radius:2px;
+}
+
+/* ----- LOGIN ---------- */
+
+.p95Login__container{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.p95Login__header{
+  position:relative;
+  background:#333;
+  color:white;
+  padding:20px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.p95Login__header h2{
+  font-weight:400;
+  font-size:1.4rem;
+}
+
+.p95Login__back{
+  position:absolute;
+  left:2%;
+  display:flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+.p95Login__back p{
+  margin-left:10px;
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.p95Login__details{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  flex:1;
+  color:white;
+}
+
+.p95Login__input{
+  width:80%;
+  flex:0.45;
+  display:flex;
+  align-items:center;
+}
+
+.p95Login__input form{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  gap:20px;
+}
+
+.p95Login__input form input{
+  padding:15px 20px;
+  background:#111;
+  color:white;
+  border:none;
+  font-size:1rem;
+  border-radius:5px;
+}
+
+.p95Login__input form input::placeholder{
+  color:rgba(255,255,255,0.8);
+  font-size:1rem;
+}
+
+.p95Login__keyboard{
+  display:flex;
+  flex-direction:column;
+  width:93%;
+  gap:5px;
+  flex:0.55;
+}
+
+.p95Login__firstRow{
+  display:grid;
+  grid-template-columns:repeat(10, 1fr);
+  gap:5px;
+}
+
+.p95Login__firstRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Login__firstRow p:hover{
+  background:#444;
+}
+
+.p95Login__secondRow{
+  display:grid;
+  grid-template-columns:repeat(10, 1fr);
+  gap:5px;
+}
+
+.p95Login__secondRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Login__secondRow p:hover{
+  background:#444;
+}
+
+
+.p95Login__thirdRow{
+  display:grid;
+  grid-template-columns:repeat(9, 1fr);
+  gap:5px;
+}
+
+.p95Login__thirdRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Login__thirdRow p:hover{
+  background:#444;
+}
+
+.p95Login__fourthRow{
+  display:flex;
+  gap:5px;
+}
+
+.p95Login__fourthRow p{
+  
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Login__fourthRow p:hover{
+  background:#444;
+}
+
+.numbers{
+  flex:0.15;
+  background:red;
+}
+
+.spacebar{
+  flex:0.55;
+  background:#111;
+}
+
+.at{
+  flex:0.1;
+  background:#111;
+}
+
+.p95Login__fourthRow a{
+  flex:0.2;
+  background:#5bc0de;
+  border-radius:5px;
+  color:white;
+  text-decoration: none;
+}
+
+.enter{
+  
+}
+
+.capitalized{
+  text-transform:uppercase;
+}
+
+/* ---------WIFI NETWORKS--------- */
+
+.p95Wifi__container{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  width:100%;
+}
+
+.p95Wifi__header{
+  position:relative;
+  background:#333;
+  color:white;
+  padding:20px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.p95Wifi__header h2{
+  font-weight:400;
+  font-size:1.4rem;
+}
+
+.p95Wifi__back{
+  position:absolute;
+  left:2%;
+  display:flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+.p95Wifi__back p{
+  margin-left:10px;
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.p95Wifi__details{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:100%;
+}
+
+.p95Wifi__networks{
+  width:83%;
+  padding: 30px 0;
+}
+
+.p95Wifi__network{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  width:100%;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  /* padding: 25px 0; */
+  cursor:pointer;
+  color:white;
+  text-decoration: none;
+}
+
+.p95Wifi__network h3{
+  width:100%;
+  height: 100%;
+  padding: 25px 0;
+}
+
+/* ---------------Wifi Password-------------- */
+
+.p95Wifi__details{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  flex:1;
+  color:white;
+}
+
+.p95Wifi__input{
+  width:80%;
+  flex:0.45;
+  display:flex;
+  align-items:center;
+}
+
+.p95Wifi__input form{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  gap:20px;
+}
+
+.p95Wifi__input form input{
+  padding:15px 20px;
+  background:#111;
+  color:white;
+  border:none;
+  font-size:1rem;
+  border-radius:5px;
+}
+
+.p95Wifi__input form input::placeholder{
+  color:rgba(255,255,255,0.8);
+  font-size:1rem;
+}
+
+.p95Wifi__keyboard{
+  display:flex;
+  flex-direction:column;
+  width:93%;
+  gap:5px;
+  flex:0.55;
+}
+
+.p95Wifi__firstRow{
+  display:grid;
+  grid-template-columns:repeat(10, 1fr);
+  gap:5px;
+}
+
+.p95Wifi__firstRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Wifi__firstRow p:hover{
+  background:#444;
+}
+
+.p95Wifi__secondRow{
+  display:grid;
+  grid-template-columns:repeat(10, 1fr);
+  gap:5px;
+}
+
+.p95Wifi__secondRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Wifi__secondRow p:hover{
+  background:#444;
+}
+
+
+.p95Wifi__thirdRow{
+  display:grid;
+  grid-template-columns:repeat(9, 1fr);
+  gap:5px;
+}
+
+.p95Wifi__thirdRow p{
+  background:#111;
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Wifi__thirdRow p:hover{
+  background:#444;
+}
+
+.p95Wifi__fourthRow{
+  display:flex;
+  gap:5px;
+}
+
+.p95Wifi__fourthRow p{
+  
+  text-align:center;
+  width:100%;
+  padding: 17px 0;
+  border-radius:5px;
+  cursor:pointer;
+  transition: all 0.1 ease;
+}
+
+.p95Wifi__fourthRow p:hover{
+  background:#444;
+}
+
+.numbers{
+  flex:0.15;
+  background:red;
+}
+
+.spacebar{
+  flex:0.55;
+  background:#111;
+}
+
+.at{
+  flex:0.1;
+  background:#111;
+}
+
+.enter{
+  flex:0.2;
+  background:#5bc0de;
+}
+
+.wifiEnter{
+  flex:0.2;
+  background:#5bc0de;
+  color:white;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:5px;
+}
+
+.wifiEnter:hover{
+  background:#555;  
+  
+}
+
+.capitalized{
+  text-transform:uppercase;
+}
+
+/* --------------WiFi Status--------------- */
+
+.p95WifiStatus__container{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  color:white;
+  width:100%;
+}
+
+.p95WifiStatus__header{
+  position:relative;
+  background:#333;
+  color:white;
+  padding:20px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.p95WifiStatus__header h2{
+  font-weight:700;
+  font-size:1.4rem;
+}
+
+.p95WifiStatus__back{
+  position:absolute;
+  left:2%;
+  display:flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+.p95WifiStatus__back p{
+  margin-left:10px;
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.p95WifiStatus__details{
+  height:100%;
+  display:flex;
+  justify-content: center;
+}

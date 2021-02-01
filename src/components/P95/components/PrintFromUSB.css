@@ -1,0 +1,73 @@
+.printFromUSB{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.p95usb__buttons{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow:hidden;
+  gap:4px;
+  position:sticky;
+}
+
+.p95usb__print{
+  text-align:center;
+}
+
+.p95usb__print p{
+  color:white;
+  font-size:1.2rem;
+  padding:20px 0;
+  background:#222;
+  border-radius:8px;
+  cursor:pointer;
+  transition:background 0.2s ease;
+}
+
+.p95usb__print p:hover{
+  background:#555;
+}
+
+.p95usb__details{
+  color:white;
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+
+.p95usb__container{
+  width:83%;
+  padding-top:40px;
+}
+
+.p95usb__file{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.p95usb__file a{
+  color:white;
+  text-decoration: none;
+}
+
+.p95usb__file hr{
+  opacity:0.1
+}
+
+.p95usb__info{
+  display:flex;
+  align-items: center;
+  padding:20px 0;
+  gap:18px;
+}
+
+.p95usb__info > .MuiSvgIcon-root{
+  font-size:2rem;
+}
+
+.folder > .MuiSvgIcon-root{
+  color:lightblue;
+}
