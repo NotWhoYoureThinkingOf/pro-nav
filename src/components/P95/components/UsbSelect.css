@@ -1,3 +1,9 @@
+.usbSelect{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
 .p95usbSelect__container{
   height:100%;
   display:flex;
@@ -33,4 +39,105 @@
   margin-left:10px;
   font-weight:500;
   font-size:1.1rem;
+}
+
+.usbSelect__right{
+  color:white;
+}
+
+.p95usbSelect__details{
+  color:white;
+  display:flex;
+  flex:1;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.usbSelect___detailsContainer{
+  display:flex;
+  width:100%;
+  gap:30px;
+  flex:1;
+  margin-bottom:25px;
+}
+
+.usbSelect__left{
+  background:white;
+  border-radius:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex:0.35;
+}
+
+.usbSelect__left img {
+  object-fit:contain;
+  height:75px;
+}
+
+.usbSelect__right{
+  display:flex;
+  flex-direction:column;
+  flex:0.65;
+  /* justify-content:center; */
+  gap:45px;
+  padding-top:20px;
+}
+
+.usbSelect__resin{
+  display:flex;
+  align-items:center;
+  background:#333;
+  padding:5px 0;
+  border-radius:5px;
+  justify-content: center;
+}
+
+.usbSelect__time{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  font-size:1.2rem;
+}
+
+.usbSelect__time h3{
+  font-weight:500;
+}
+
+.usbSelect__volume{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  font-size:1.2rem;
+}
+
+.usbSelect__volume h3{
+  font-weight:500;
+}
+
+.usbSelect__print{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:white;
+  background:#5cb85c;
+  border-radius:5px;
+  padding: 20px 0;
+  gap:10px;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.usbSelect__print:hover{
+  background: #73e673;
+}
+
+.usbSelect__print > .MuiSvgIcon-root{
+  font-size:2rem;
+}
+
+.usbSelect__print h2{
+  font-weight:500;
+  font-size:1.4rem;
+  
 }

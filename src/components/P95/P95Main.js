@@ -32,6 +32,7 @@ import About from "./components/About";
 import PrintFromRayware from "./components/PrintFromRayware";
 import PrintFromUSB from "./components/PrintFromUSB";
 import UsbSelect from "./components/UsbSelect";
+import UsbDirections from "./components/UsbDirections";
 
 const P95Main = () => {
   const params = useParams();
@@ -292,6 +293,10 @@ const P95Main = () => {
 
             <Route exact path={`/p95/usb-select`}>
               <UsbSelect />
+            </Route>
+
+            <Route exact path={`/p95/usb-directions`}>
+              <UsbDirections />
             </Route>
 
             <Route exact path={`/p95/wifi-networks/password`}>
