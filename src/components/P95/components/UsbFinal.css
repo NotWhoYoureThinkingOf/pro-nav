@@ -1,22 +1,22 @@
-.printFromRayware{
+.usbFinal{
   display:flex;
   flex-direction:column;
   height:100%;
 }
 
-.p95Print__buttons{
+.usbFinal__buttons{
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   overflow:hidden;
   gap:4px;
   position:sticky;
 }
 
-.p95Print__print{
+.usbFinal__print{
   text-align:center;
 }
 
-.p95Print__print p{
+.usbFinal__print p{
   color:white;
   font-size:1.2rem;
   padding:20px 0;
@@ -26,11 +26,11 @@
   transition:background 0.2s ease;
 }
 
-.p95Print__print p:hover{
+.usbFinal__print p:hover{
   background:#555;
 }
 
-.p95Print__details{
+.usbFinal__details{
   color:white;
   display:flex;
   flex:1;
@@ -38,13 +38,13 @@
   padding: 25px;
 }
 
-.p95Print__detailsContainer{
+.usbFinal__detailsContainer{
   display:flex;
   width:100%;
   gap:30px;
 }
 
-.p95Print__detailsLeft{
+.usbFinal__detailsLeft{
   background:white;
   border-radius:10px;
   display:flex;
@@ -53,12 +53,12 @@
   flex:0.25;
 }
 
-.p95Print__detailsLeft img{
+.usbFinal__detailsLeft img{
   object-fit:contain;
   height:75px;
 }
 
-.p95Print__detailsRight{
+.usbFinal__detailsRight{
   display:flex;
   flex-direction:column;
   flex:0.75;
@@ -66,19 +66,19 @@
   gap:20px;
 }
 
-.p95Print__filename h3{
+.usbFinal__filename h3{
   font-size:1.5rem;
   font-weight:400;
 }
 
-.p95Print__progress{
+.usbFinal__progress{
   display:flex;
   flex-direction:column;
   gap:10px;
   margin-bottom:30px;
 }
 
-.p95Print__time{
+.usbFinal__time{
   display:flex;
   background:#222;
   padding:15px 10px;
@@ -87,47 +87,47 @@
   align-items:center;
 }
 
-.p95Print__total {
+.usbFinal__total {
   flex:0.33
 }
 
-.p95Print__total h3{
+.usbFinal__total h3{
   font-weight:400;
   font-size:1.3rem;
 }
 
-.p95Print__total h2{
+.usbFinal__total h2{
   font-weight:700;
   font-size:1.25rem;
 }
 
 
-.p95Print__process h3{
+.usbFinal__process h3{
   font-weight:500;
   font-size:1.3rem;
 }
 
-.p95Print__remaining{
+.usbFinal__remaining{
   display:flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.p95Print__remaining{
+.usbFinal__remaining{
   flex:0.33;
 }
 
-.p95Print__remaining h3{
+.usbFinal__remaining h3{
   font-weight:400;
   font-size:1.3rem;
 }
 
-.p95Print__remaining h2{
+.usbFinal__remaining h2{
   font-weight:700;
   font-size:1.25rem;
 }
 
-.p95Print__totalLayers{
+.usbFinal__totalLayers{
   background:#222;
   padding:5px 0px;
   border-radius:5px;
@@ -135,12 +135,12 @@
   justify-content: center;
 }
 
-.p95Print__info{
+.usbFinal__info{
   display:flex;
   gap:10px;
 }
 
-.p95Print__resin{
+.usbFinal__resin{
   display:flex;
   align-items:center;
   flex:0.68;
@@ -152,11 +152,11 @@
   border-radius:5px;
 }
 
-.p95Print__resin h5{
+.usbFinal__resin h5{
   font-weight:500;
 }
 
-.p95Print__microns{
+.usbFinal__microns{
   flex:0.32;
   display:flex;
   align-items:center;
@@ -165,12 +165,12 @@
   border-radius:5px;
 }
 
-.p95Print__microns h5{
+.usbFinal__microns h5{
   font-size:1.2rem;
   font-weight:500;
 }
 
-.p95Print__controls{
+.usbFinal__controls{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   overflow:hidden;
@@ -179,7 +179,7 @@
   color:white;
 }
 
-.p95Print__controls .control{
+.usbFinal__controls .control{
   color:white;
   font-size:1.2rem;
   padding:17px 0;
@@ -193,20 +193,20 @@
   gap:10px;
 }
 
-.p95Print__controls .control:hover{
+.usbFinal__controls .control:hover{
   background:#555;
 }
 
-.p95Print__cancel > .MuiSvgIcon-root{
+.usbFinal__cancel > .MuiSvgIcon-root{
   color:red;
   font-size:2rem;
 }
 
-.p95Print__layer > .MuiSvgIcon-root{
+.usbFinal__layer > .MuiSvgIcon-root{
   color:lightblue;
   font-size:2rem;
 }
 
-.p95Print__pause > .MuiSvgIcon-root{
+.usbFinal__pause > .MuiSvgIcon-root{
   font-size:2rem;
 }

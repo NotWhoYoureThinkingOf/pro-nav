@@ -40,3 +40,138 @@
   font-weight:500;
   font-size:1.1rem;
 }
+
+.usbDirections__details{
+  color:white;
+  display:flex;
+  flex:1;
+  flex-direction: column;
+}
+
+.usbDirections__detailsContainer{
+  flex:1;
+  padding: 0 25px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.usbDirections__detailsTop{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  flex:0.5;
+}
+
+.usbDirections__topLeft{
+  flex:0.5;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap:30px;
+}
+
+.usbDirections__fill h3{
+  font-size:1.5rem;
+  font-weight:500;
+}
+
+.usbDirections__fill h3 span{
+  background: #73e673;
+  border-radius:5px;
+  padding:10px 15px;
+  margin-left:5px;
+}
+
+.usbDirections__resin{
+  display:flex;
+  justify-content: center;
+  background: #555;
+  border-radius: 5px;
+  padding:5px 0px;
+  width:100%;
+}
+
+.usbDirections__detailsContainer hr{
+  width:100%;
+  opacity:0.1;
+}
+
+.usbDirections__topRight{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  gap:10px;
+  flex:0.5;
+}
+
+.usbDirections__topRight h4{
+  font-size:1.4rem;
+  font-weight:500;
+  opacity:0.5;
+}
+
+.usbDirections__topRight img{
+  object-fit:contain;
+  height:100px;
+}
+
+.usbDirections__detailsBottom{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  flex:0.5;
+}
+
+.usbDirections__bottomLeft{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex:0.5;
+}
+
+.usbDirections__bottomLeft h3{
+  font-size:1.5rem;
+  font-weight:500;
+}
+
+.usbDirections__bottomRight{
+  flex:0.5;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.usbDirections__bottomRight img{
+  object-fit:contain;
+  height:100px;
+}
+
+.usbDirections__print{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:white;
+  background:#5cb85c;
+  border-radius:5px;
+  padding: 20px 0;
+  gap:10px;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.usbDirections__print:hover{
+  background: #73e673;
+}
+
+.usbDirections__print > .MuiSvgIcon-root{
+  font-size:2rem;
+}
+
+.usbDirections__print h2{
+  font-weight:500;
+  font-size:1.4rem;
+  
+}

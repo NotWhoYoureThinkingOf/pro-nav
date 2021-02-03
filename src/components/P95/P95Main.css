@@ -629,7 +629,8 @@
 }
 
 .p95Wifi__header{
-  position:relative;
+  position:sticky;
+  top:0;
   background:#333;
   color:white;
   padding:20px 0;
