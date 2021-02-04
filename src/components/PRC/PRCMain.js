@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./PRCMain.css";
 import PRC from "../../assets/PRC.png";
 import { ChevronRight, Build } from "@material-ui/icons";
@@ -11,15 +11,23 @@ import {
   useParams,
 } from "react-router-dom";
 import Cure from "./components/Cure";
+import {
+  grab,
+  release,
+  selectCureResin,
+} from "../../features/cureResin/cureResinSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const PRCMain = () => {
   const params = useParams();
   const history = useHistory();
   const location = useLocation();
   const [selectedResin, setSelectedResin] = useState("");
+  const dispatch = useDispatch();
 
   const getResin = (e) => {
     setSelectedResin(e.target.innerText);
+    dispatch(grab({ resin: e.target.innerText }));
   };
 
   console.log(selectedResin);
