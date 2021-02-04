@@ -86,7 +86,7 @@ const P95Main = () => {
         <h3>
           Send Print
           <br />
-          From Rayware
+          From RayWare
         </h3>
       </Link>
       <div className="p95Main__container">

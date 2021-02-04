@@ -14,6 +14,7 @@
 
 .p95usb__print{
   text-align:center;
+  text-decoration: none;
 }
 
 .p95usb__print p{
@@ -24,6 +25,10 @@
   border-radius:8px;
   cursor:pointer;
   transition:background 0.2s ease;
+}
+
+.p95Main__print{
+  text-decoration: none;
 }
 
 .p95usb__print p:hover{
