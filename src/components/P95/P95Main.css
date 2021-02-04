@@ -25,6 +25,18 @@
   justify-content: center;
 }
 
+.p95Warning{
+  position:absolute;
+  top:5%;
+  z-index:999;
+  color:white;
+  background:black;
+  width:50%;
+  padding:20px;
+  border:5px solid white;
+  border-radius:20px;
+}
+
 .p95Main__logo{
   position:absolute;
   top:85%;

@@ -76,6 +76,11 @@ const P95Main = () => {
       <div className="p95Main__bg">
         <img src={bg} alt="" />
       </div>
+      <h1 className="p95Warning">
+        If the app breaks or stops working it's probably because I just deployed
+        some changes and needs to be reloaded and/or brought back to the main
+        page.
+      </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
       </div>
