@@ -27,7 +27,7 @@
 
 .p95Warning{
   position:absolute;
-  top:5%;
+  top:2%;
   z-index:999;
   color:white;
   background:black;
@@ -35,6 +35,7 @@
   padding:20px;
   border:5px solid white;
   border-radius:20px;
+  font-size:1rem;
 }
 
 .p95Main__logo{
