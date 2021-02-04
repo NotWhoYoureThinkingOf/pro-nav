@@ -82,6 +82,11 @@
   align-items:center;
   border:2px solid white;
   border-radius: 10px;
+  transition:all 0.1s ease;
+}
+
+.prcMain__firstButtons a:hover{
+  background:#555;
 }
 
 .prcMain__firstButtons a:focus{
@@ -126,6 +131,11 @@
   align-items:center;
   justify-content: center;
   text-decoration:none;
+  transition:all 0.1s ease;
+}
+
+.prcMain__firstStart a:hover{
+  background:#6ddb6d;
 }
 
 .prcMain__firstStart h2{
