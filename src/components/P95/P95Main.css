@@ -76,6 +76,7 @@
   justify-content: center;
   border-radius:15px;
   color:white;
+  text-decoration: none;
 }
 
 .p95Main__send h3{
@@ -117,6 +118,10 @@
   position:sticky;
   top:0;
   background:black;
+}
+
+.p95Main__buttons a{
+  text-decoration:none;
 }
 
 .p95Main__print{
@@ -897,4 +902,52 @@
   height:100%;
   display:flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 1600px){
+  .p95Main__usb{
+    right:9%;
+    top:35%;
+  }
+  
+  .p95Main__usb img{
+    object-fit:contain;  
+    filter:drop-shadow(0px 2px 4px rgba(255,255,255,0.1));
+    padding:20px;
+  }
+  
+  .p95Main__send{
+    left:5%;
+    top:40%;
+  }
+  
+  .p95Main__send h3{
+    padding:50px;
+    text-align:center;
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (max-width: 1490px){
+  .p95Main__usb{
+    right:7%;
+    top:35%;
+  }
+  
+  .p95Main__usb img{
+    object-fit:contain;  
+    filter:drop-shadow(0px 2px 4px rgba(255,255,255,0.1));
+    padding:20px;
+  }
+  
+  .p95Main__send{
+    left:3%;
+    top:40%;
+  }
+  
+  .p95Main__send h3{
+    padding:50px;
+    text-align:center;
+    font-size:1.5rem;
+  }
 }
