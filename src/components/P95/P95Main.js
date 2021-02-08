@@ -449,15 +449,7 @@ const P95Main = () => {
                       </h3>
                       <SignalWifi1Bar />
                     </Link>
-                    <Link
-                      to="/p95/wifi-networks/password"
-                      className="p95Wifi__network network6"
-                    >
-                      <h3 onClick={(e) => getNetwork(e)}>
-                        Girls Gone Wireless
-                      </h3>
-                      <SignalWifi1Bar />
-                    </Link>
+
                     <Link
                       to="/p95/wifi-networks/password"
                       className="p95Wifi__network network7"
