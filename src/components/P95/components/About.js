@@ -40,7 +40,7 @@ const About = ({ network }) => {
           </div>
           <div className="about__detail last">
             <p>PrintOS Version</p>
-            <p>6.32.5</p>
+            <p>6.35</p>
           </div>
         </div>
       </div>

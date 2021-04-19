@@ -215,7 +215,7 @@ const P95Main = () => {
                         </div>
                       ) : (
                         <div
-                          to="/p95/wifi-networks"
+                          // to="/p95/wifi-networks"
                           className="p95Main__settingOption"
                         >
                           <h4>Ethernet</h4>
@@ -274,7 +274,7 @@ const P95Main = () => {
                   </div>
                 </div>
                 <div className="p95Main__setting extra">
-                  <h4>Extra Attachment Layers</h4>
+                  <h4>Grayscale (Beta)</h4>
                   <div className="p95Main__settingOption language">
                     <p>Off</p>
                     <ChevronRight />
