@@ -34,6 +34,7 @@ import PrintFromUSB from "./components/PrintFromUSB";
 import UsbSelect from "./components/UsbSelect";
 import UsbDirections from "./components/UsbDirections";
 import UsbFinal from "./components/UsbFinal";
+import Lid from "./components/Lid";
 
 const P95Main = () => {
   const params = useParams();
@@ -77,9 +78,9 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        If the app breaks or stops working it's probably because I just deployed
-        some changes and needs to be reloaded and/or brought back to the main
-        page.
+        Changed some settings to match 6.35, added Lid Safety Sensor screen.
+        PrintOS will also say 6.35 in About menu. If anything breaks, just go
+        back to the main page and/or refresh.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
@@ -252,13 +253,13 @@ const P95Main = () => {
                     <ChevronRight />
                   </div>
                 </div>
-                <div className="p95Main__setting extra">
+                <Link to="/p95/lid" className="p95Main__setting extra">
                   <h4>Lid Safety Sensor</h4>
                   <div className="p95Main__settingOption language">
                     <p>On</p>
                     <ChevronRight />
                   </div>
-                </div>
+                </Link>
                 <div className="p95Main__setting extra">
                   <h4>Tank Heating Always On</h4>
                   <div className="p95Main__settingOption language">
@@ -377,6 +378,10 @@ const P95Main = () => {
 
             <Route exact path={`/p95/about`}>
               <About network={network} />
+            </Route>
+
+            <Route exact path={`/p95/lid`}>
+              <Lid />
             </Route>
 
             <Route exact path={`/p95/wifi-status`}>
