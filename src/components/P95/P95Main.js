@@ -36,6 +36,7 @@ import UsbDirections from "./components/UsbDirections";
 import UsbFinal from "./components/UsbFinal";
 import Lid from "./components/Lid";
 import Grayscale from "./components/Grayscale";
+import Ethernet from "./components/Ethernet";
 
 const P95Main = () => {
   const params = useParams();
@@ -216,14 +217,14 @@ const P95Main = () => {
                           <ChevronRight />
                         </div>
                       ) : (
-                        <div
-                          // to="/p95/wifi-networks"
+                        <Link
+                          to="/p95/ethernet"
                           className="p95Main__settingOption"
                         >
                           <h4>Ethernet</h4>
 
                           <ChevronRight />
-                        </div>
+                        </Link>
                       )}
                     </Link>
                     <Link to="/p95/login" className="p95Main__setting last">
@@ -375,6 +376,10 @@ const P95Main = () => {
                   </div>
                 </div>
               </div>
+            </Route>
+
+            <Route exact path={`/p95/ethernet`}>
+              <Ethernet />
             </Route>
 
             <Route exact path={`/p95/about`}>

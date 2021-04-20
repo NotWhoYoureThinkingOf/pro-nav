@@ -1,0 +1,85 @@
+.ethernet__header{
+  position:relative;
+  background:#333;
+  color:white;
+  padding:20px 0;
+  display:flex;
+  justify-content: center;
+}
+
+.ethernet__header h2{
+  font-weight:400;
+  font-size:1.4rem;
+}
+
+.ethernet__back{
+  position:absolute;
+  left:2%;
+  display:flex;
+  align-items: center;
+  color:white;
+  text-decoration: none;
+}
+
+.ethernet__back p{
+  margin-left:10px;
+  font-weight:500;
+  font-size:1.1rem;
+}
+
+.ethernet__container{
+  width:100%;
+  display:flex;
+  /* justify-content: center; */
+  align-items:center;
+  flex-direction:column;
+  color:white;
+}
+
+.ethernet__info{
+  width:83%;
+  display:flex;
+  flex-direction:column;
+  margin-top: 40px;
+  font-size:18px;
+  gap:25px;
+}
+
+.ethernet__name{
+  display:flex;
+  justify-content: space-between;
+}
+
+.ethernet__configure{
+  display:flex;
+  justify-content: space-between;
+}
+
+.ethernet__configureOptions{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  cursor:pointer;
+}
+
+.ethernet__details{
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+}
+
+.ethernet__IP{
+  display:flex;
+  justify-content: space-between;
+}
+
+.ethernet__subnet{
+  display:flex;
+  justify-content: space-between;
+}
+
+.ethernet__router{
+  display:flex;
+  justify-content: space-between;
+}
+
