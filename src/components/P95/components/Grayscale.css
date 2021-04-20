@@ -1,4 +1,4 @@
-.lid__header{
+.grayscale__header{
   position:relative;
   background:#333;
   color:white;
@@ -7,12 +7,12 @@
   justify-content: center;
 }
 
-.lid__header h2{
+.grayscale__header h2{
   font-weight:400;
   font-size:1.4rem;
 }
 
-.lid__back{
+.grayscale__back{
   position:absolute;
   left:2%;
   display:flex;
@@ -21,13 +21,13 @@
   text-decoration: none;
 }
 
-.lid__back p{
+.grayscale__back p{
   margin-left:10px;
   font-weight:500;
   font-size:1.1rem;
 }
 
-.lid__container{
+.grayscale__container{
   width:100%;
   display:flex;
   /* justify-content: center; */
@@ -36,7 +36,7 @@
   color:white;
 }
 
-.lid__switch{
+.grayscale__switch{
   width:83%;
   display:flex;
   align-items:center;
@@ -46,7 +46,7 @@
   cursor:pointer;
 }
 
-.lid__onOff{
+.grayscale__onOff{
   background-color:rgb(23, 255, 81);
   height:100%;
   width:100px;
@@ -58,15 +58,15 @@
   
 }
 
-.lid__onOff p{
+.grayscale__onOff p{
   padding:5px 8px;
   background-color:white;
   color:rgb(23, 255, 81);
   border-radius:5px;
-  pointer-events:none;
+  pointer-event:none;
 }
 
-.lid__off{
+.grayscale__off{
   background-color:#333;
   height:100%;
   width:100px;
@@ -77,22 +77,22 @@
   padding:4px;
 }
 
-.lid__off p{
+.grayscale__off p{
   padding:5px 8px;
   background-color:white;
   color:#333;
   border-radius:5px;
-  pointer-event:none;
+  pointer-events:none;
 }
 
-.lid__details{
+.grayscale__details{
   width:83%;
   display:flex;
   flex-direction:column;
   /* padding-top:30px; */
 }
 
-.lid__details p{
+.grayscale__details p{
  font-size:18px;
  line-height:1.5;
  /* word-spacing: 1px; */

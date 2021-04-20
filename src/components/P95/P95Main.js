@@ -35,6 +35,7 @@ import UsbSelect from "./components/UsbSelect";
 import UsbDirections from "./components/UsbDirections";
 import UsbFinal from "./components/UsbFinal";
 import Lid from "./components/Lid";
+import Grayscale from "./components/Grayscale";
 
 const P95Main = () => {
   const params = useParams();
@@ -274,13 +275,13 @@ const P95Main = () => {
                     <ChevronRight />
                   </div>
                 </div>
-                <div className="p95Main__setting extra">
+                <Link to="/p95/grayscale" className="p95Main__setting extra">
                   <h4>Grayscale (Beta)</h4>
                   <div className="p95Main__settingOption language">
                     <p>Off</p>
                     <ChevronRight />
                   </div>
-                </div>
+                </Link>
                 <div className="p95Main__setting extra">
                   <h4>Reboot Printer</h4>
                   <div className="p95Main__settingOption language">
@@ -382,6 +383,10 @@ const P95Main = () => {
 
             <Route exact path={`/p95/lid`}>
               <Lid />
+            </Route>
+
+            <Route exact path={`/p95/grayscale`}>
+              <Grayscale />
             </Route>
 
             <Route exact path={`/p95/wifi-status`}>
