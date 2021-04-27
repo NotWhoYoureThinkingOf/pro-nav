@@ -11,6 +11,11 @@ import Sprintray2 from "./components/Sprintray2";
 import Keystone from "./components/Keystone";
 import Keystone2 from "./components/Keystone2";
 import Dreve from "./components/Dreve";
+import Dentca from "./components/Dentca";
+import Dentca2 from "./components/Dentca2";
+import NextDent from "./components/NextDent";
+import NextDent2 from "./components/NextDent2";
+import Custom from "./components/Custom";
 
 const PRCMain = () => {
   const location = useLocation();
@@ -64,6 +69,26 @@ const PRCMain = () => {
                   </Link>
                 </div>
               </div>
+            </Route>
+
+            <Route exact path={`/prc/custom`}>
+              <Custom />
+            </Route>
+
+            <Route exact path={`/prc/nextdent2`}>
+              <NextDent2 />
+            </Route>
+
+            <Route exact path={`/prc/nextdent`}>
+              <NextDent />
+            </Route>
+
+            <Route exact path={`/prc/dentca2`}>
+              <Dentca2 />
+            </Route>
+
+            <Route exact path={`/prc/dentca`}>
+              <Dentca />
             </Route>
 
             <Route exact path={`/prc/dreve`}>
