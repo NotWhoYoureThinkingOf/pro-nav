@@ -1,36 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./PRCMain.css";
 import PRC from "../../assets/PRC.png";
-import { ChevronRight, Build } from "@material-ui/icons";
-import {
-  Link,
-  Switch,
-  Route,
-  useHistory,
-  useLocation,
-  useParams,
-} from "react-router-dom";
+import { Build, Repeat } from "@material-ui/icons";
+import { Link, Switch, Route, useLocation } from "react-router-dom";
 import Cure from "./components/Cure";
-import {
-  grab,
-  release,
-  selectCureResin,
-} from "../../features/cureResin/cureResinSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { selectCureResin } from "../../features/cureResin/cureResinSlice";
+import { useSelector } from "react-redux";
+import Sprintray from "./components/Sprintray";
+import Sprintray2 from "./components/Sprintray2";
 
 const PRCMain = () => {
-  const params = useParams();
-  const history = useHistory();
   const location = useLocation();
-  const [selectedResin, setSelectedResin] = useState("");
-  const dispatch = useDispatch();
-
-  const getResin = (e) => {
-    setSelectedResin(e.target.innerText);
-    dispatch(grab({ resin: e.target.innerText }));
-  };
-
-  console.log(selectedResin);
+  const resin = useSelector(selectCureResin);
 
   return (
     <div className="prcMain">
@@ -46,14 +27,64 @@ const PRCMain = () => {
       <div className="prcMain__container">
         <div className="prcMain__screen">
           <Switch key={location.pathname} location={location}>
+            <Route exact path={`/prc`}>
+              <div className="prcMain__firstScreen">
+                <div className="prcMain__firstStart">
+                  <div className="prcMain__settings">
+                    <Build />
+                  </div>
+                  <Link to="/prc/cure" className="prcMain__startButton">
+                    <h2>{resin?.resin ? resin.resin : "Die and Model"}</h2>
+                    <div className="prcMain__startButtonRepeat">
+                      <Repeat />
+                    </div>
+                  </Link>
+                </div>
+                <div className="prcMain__firstButtons">
+                  <Link to="/prc/sprintray">
+                    <h3>SprintRay</h3>
+                  </Link>
+                  <Link to="/prc/custom">
+                    <h3>Custom</h3>
+                  </Link>
+                  <Link to="/prc/keystone">
+                    <h3>Keystone</h3>
+                  </Link>
+                  <Link to="/prc/dentca">
+                    <h3>DENTCA</h3>
+                  </Link>
+                  <Link to="/prc/dreve">
+                    <h3>Dentca</h3>
+                  </Link>
+                  <Link to="/prc/nextdent">
+                    <h3>NextDent</h3>
+                  </Link>
+                </div>
+              </div>
+            </Route>
+
+            <Route exact path={`/prc/sprintray2`}>
+              <Sprintray2 />
+            </Route>
+
+            <Route exact path={`/prc/sprintray`}>
+              <Sprintray />
+            </Route>
+
             <Route exact path={`/prc/cure`}>
               <Cure />
             </Route>
+          </Switch>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-            <Route exact path={`/prc`}>
-              <div className="prcMain__firstScreen">
-                <div className="prcMain__firstButtons">
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
+export default PRCMain;
+
+{
+  /* <Link to="/prc" onClick={(e) => getResin(e)}>
                     <h3>SR Model Resins</h3>
                   </Link>
                   <Link to="/prc" onClick={(e) => getResin(e)}>
@@ -70,27 +101,5 @@ const PRCMain = () => {
                   </Link>
                   <Link to="/prc" onClick={(e) => getResin(e)}>
                     <h3>Custom</h3>
-                  </Link>
-                </div>
-                <div className="prcMain__firstStart">
-                  <div className="prcMain__build">
-                    <Build />
-                  </div>
-                  <Link to="/prc/cure">
-                    <h2>Start</h2>
-                  </Link>
-
-                  <div className="prcMain__next">
-                    <ChevronRight />
-                  </div>
-                </div>
-              </div>
-            </Route>
-          </Switch>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default PRCMain;
+                  </Link> */
+}

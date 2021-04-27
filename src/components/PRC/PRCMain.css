@@ -69,7 +69,7 @@
 .prcMain__firstButtons{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  flex:0.8;
+  flex:1;
   width:100%;
   grid-gap:15px;
 }
@@ -94,7 +94,7 @@
 }
 
 .prcMain__firstButtons a h3{
-  font-size:2rem;
+  font-size:2.5rem;
   pointer-events: none;
 }
 
@@ -102,29 +102,29 @@
   display:flex;
   color:white;
   align-items:center;
+  gap: .5rem;
   width:100%;
-  flex:0.2;
-  width:100%;
+  /* flex:0.2; */
+  /* width:100%; */
   /* border-radius:10px; */
 }
 
-.prcMain__build{
+.prcMain__settings{
   flex:0.15;
   background:#444;
   height:100%;
   display:flex;
   justify-content: center;
   align-items:center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius:10px;
 }
 
-.prcMain__build > .MuiSvgIcon-root{
-  font-size:2rem;
+.prcMain__settings > .MuiSvgIcon-root{
+  font-size:4rem;
 }
 
-.prcMain__firstStart a{
-  flex:0.7;
+.prcMain__startButton{
+  flex:0.85;
   background:#5cb85c;
   height:100%;
   display:flex;
@@ -132,16 +132,31 @@
   justify-content: center;
   text-decoration:none;
   transition:all 0.1s ease;
+  border-radius:10px;
+  padding:2rem 0;
+  position:relative;
 }
 
-.prcMain__firstStart a:hover{
+.prcMain__startButton h2{
+  color:white;
+  font-size:2.5rem;
+}
+
+.prcMain__startButton:hover{
   background:#6ddb6d;
 }
 
-.prcMain__firstStart h2{
+.prcMain__startButtonRepeat{
+  position:absolute;
+  left:1rem;
   color:white;
-  font-size:2rem;
 }
+
+.prcMain__startButtonRepeat > .MuiSvgIcon-root{
+  font-size:4rem;
+}
+
+
 
 .prcMain__next{
   flex:0.15;
