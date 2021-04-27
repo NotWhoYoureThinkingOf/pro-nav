@@ -8,6 +8,9 @@ import { selectCureResin } from "../../features/cureResin/cureResinSlice";
 import { useSelector } from "react-redux";
 import Sprintray from "./components/Sprintray";
 import Sprintray2 from "./components/Sprintray2";
+import Keystone from "./components/Keystone";
+import Keystone2 from "./components/Keystone2";
+import Dreve from "./components/Dreve";
 
 const PRCMain = () => {
   const location = useLocation();
@@ -48,19 +51,31 @@ const PRCMain = () => {
                     <h3>Custom</h3>
                   </Link>
                   <Link to="/prc/keystone">
-                    <h3>Keystone</h3>
+                    <h3>KeyStone</h3>
                   </Link>
                   <Link to="/prc/dentca">
                     <h3>DENTCA</h3>
                   </Link>
                   <Link to="/prc/dreve">
-                    <h3>Dentca</h3>
+                    <h3>Dreve</h3>
                   </Link>
                   <Link to="/prc/nextdent">
                     <h3>NextDent</h3>
                   </Link>
                 </div>
               </div>
+            </Route>
+
+            <Route exact path={`/prc/dreve`}>
+              <Dreve />
+            </Route>
+
+            <Route exact path={`/prc/keystone2`}>
+              <Keystone2 />
+            </Route>
+
+            <Route exact path={`/prc/keystone`}>
+              <Keystone />
             </Route>
 
             <Route exact path={`/prc/sprintray2`}>
