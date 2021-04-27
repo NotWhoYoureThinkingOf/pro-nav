@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 const Lid = () => {
   const [switchOn, setSwitchOn] = useState(true);
 
-  console.log(switchOn);
-
   return (
     <div className="lid">
       <div className="lid__header">

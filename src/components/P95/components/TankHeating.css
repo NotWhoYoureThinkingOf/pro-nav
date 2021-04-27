@@ -1,4 +1,4 @@
-.grayscale__header{
+.tankHeating__header{
   position:relative;
   background:#333;
   color:white;
@@ -7,12 +7,12 @@
   justify-content: center;
 }
 
-.grayscale__header h2{
+.tankHeating__header h2{
   font-weight:400;
   font-size:1.4rem;
 }
 
-.grayscale__back{
+.tankHeating__back{
   position:absolute;
   left:2%;
   display:flex;
@@ -21,13 +21,13 @@
   text-decoration: none;
 }
 
-.grayscale__back p{
+.tankHeating__back p{
   margin-left:10px;
   font-weight:500;
   font-size:1.1rem;
 }
 
-.grayscale__container{
+.tankHeating__container{
   width:100%;
   display:flex;
   /* justify-content: center; */
@@ -36,7 +36,7 @@
   color:white;
 }
 
-.grayscale__switch{
+.tankHeating__switch{
   width:83%;
   display:flex;
   align-items:center;
@@ -46,7 +46,7 @@
   cursor:pointer;
 }
 
-.grayscale__onOff{
+.tankHeating__onOff{
   background-color:rgb(23, 255, 81);
   height:100%;
   width:100px;
@@ -58,7 +58,7 @@
   
 }
 
-.grayscale__onOff p{
+.tankHeating__onOff p{
   padding:5px 8px;
   background-color:white;
   color:rgb(23, 255, 81);
@@ -66,7 +66,7 @@
   pointer-events:none;
 }
 
-.grayscale__off{
+.tankHeating__off{
   background-color:#333;
   height:100%;
   width:100px;
@@ -77,7 +77,7 @@
   padding:4px;
 }
 
-.grayscale__off p{
+.tankHeating__off p{
   padding:5px 8px;
   background-color:white;
   color:#333;
@@ -85,15 +85,16 @@
   pointer-events:none;
 }
 
-.grayscale__details{
+.tankHeating__details{
   width:83%;
   display:flex;
   flex-direction:column;
   /* padding-top:30px; */
 }
 
-.grayscale__details p{
+.tankHeating__details p{
  font-size:18px;
  line-height:1.5;
  /* word-spacing: 1px; */
+ margin-bottom:1.5rem;
 }

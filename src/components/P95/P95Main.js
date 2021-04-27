@@ -36,7 +36,10 @@ import UsbDirections from "./components/UsbDirections";
 import UsbFinal from "./components/UsbFinal";
 import Lid from "./components/Lid";
 import Grayscale from "./components/Grayscale";
+import Language from "./components/Language";
 import Ethernet from "./components/Ethernet";
+import TankHeating from "./components/TankHeating";
+import ReinforcedSupports from "./components/ReinforcedSupports";
 
 const P95Main = () => {
   const params = useParams();
@@ -80,9 +83,9 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        Changed some settings to match 6.35, added Lid Safety Sensor screen.
-        PrintOS will also say 6.35 in About menu. If anything breaks, just go
-        back to the main page and/or refresh.
+        Changed some settings to match 6.35, added most of the menues. PrintOS
+        will also say 6.35 in About menu. Will be working on ProCure next. If
+        anything breaks, just go back to the main page and/or refresh.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
@@ -248,13 +251,13 @@ const P95Main = () => {
                     <ChevronRight />
                   </div>
                 </Link>
-                <div className="p95Main__setting">
+                <Link to="/p95/language" className="p95Main__setting">
                   <h4>System Language</h4>
                   <div className="p95Main__settingOption language">
                     <p>English</p>
                     <ChevronRight />
                   </div>
-                </div>
+                </Link>
                 <Link to="/p95/lid" className="p95Main__setting extra">
                   <h4>Lid Safety Sensor</h4>
                   <div className="p95Main__settingOption language">
@@ -262,20 +265,23 @@ const P95Main = () => {
                     <ChevronRight />
                   </div>
                 </Link>
-                <div className="p95Main__setting extra">
+                <Link to="/p95/tankheating" className="p95Main__setting extra">
                   <h4>Tank Heating Always On</h4>
                   <div className="p95Main__settingOption language">
                     <p>On</p>
                     <ChevronRight />
                   </div>
-                </div>
-                <div className="p95Main__setting extra">
+                </Link>
+                <Link
+                  to="/p95/reinforcedsupports"
+                  className="p95Main__setting extra"
+                >
                   <h4>Reinforced Supports (Beta)</h4>
                   <div className="p95Main__settingOption language">
                     <p>Off</p>
                     <ChevronRight />
                   </div>
-                </div>
+                </Link>
                 <Link to="/p95/grayscale" className="p95Main__setting extra">
                   <h4>Grayscale (Beta)</h4>
                   <div className="p95Main__settingOption language">
@@ -283,12 +289,12 @@ const P95Main = () => {
                     <ChevronRight />
                   </div>
                 </Link>
-                <div className="p95Main__setting extra">
+                <Link to="/p95" className="p95Main__setting extra">
                   <h4>Reboot Printer</h4>
                   <div className="p95Main__settingOption language">
                     <ChevronRight />
                   </div>
-                </div>
+                </Link>
               </div>
             </Route>
 
@@ -386,8 +392,20 @@ const P95Main = () => {
               <About network={network} />
             </Route>
 
+            <Route exact path={`/p95/language`}>
+              <Language />
+            </Route>
+
             <Route exact path={`/p95/lid`}>
               <Lid />
+            </Route>
+
+            <Route exact path={`/p95/tankheating`}>
+              <TankHeating />
+            </Route>
+
+            <Route exact path={`/p95/reinforcedsupports`}>
+              <ReinforcedSupports />
             </Route>
 
             <Route exact path={`/p95/grayscale`}>

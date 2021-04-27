@@ -1,20 +1,9 @@
 import React, { useEffect } from "react";
 import "./Cure.css";
-import { ChevronRight, Build, Timer, HotTub } from "@material-ui/icons";
-import {
-  Link,
-  Switch,
-  Route,
-  useHistory,
-  useLocation,
-  useParams,
-} from "react-router-dom";
-import {
-  grab,
-  release,
-  selectCureResin,
-} from "../../../features/cureResin/cureResinSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { Timer, HotTub } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import { selectCureResin } from "../../../features/cureResin/cureResinSlice";
+import { useSelector } from "react-redux";
 
 const Cure = () => {
   const resin = useSelector(selectCureResin);
