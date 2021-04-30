@@ -83,10 +83,9 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        Added mostly everything for ProCure, will make last adjustments soon,
-        like cure screen. Changed printer to match 6.35, added most of the
-        menues. If anything breaks, just go back to the main page and/or
-        refresh.
+        ProCure should be finished. Let me know if there's any bugs. Same with
+        printer. Should be good to go. If anything breaks, just go back to the
+        main page and/or refresh.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
