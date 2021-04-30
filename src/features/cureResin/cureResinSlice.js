@@ -10,7 +10,7 @@ export const cureResinSlice = createSlice({
       state.resin = action.payload;
     },
     release: (state) => {
-      state.value = null;
+      state.resin = null;
     },
   },
 });

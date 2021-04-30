@@ -104,9 +104,10 @@
   align-items:center;
   gap: .5rem;
   width:100%;
-  /* flex:0.2; */
-  /* width:100%; */
-  /* border-radius:10px; */
+}
+
+.prcMain__firstStart a > .MuiSvgIcon-root{
+  color:white;
 }
 
 .prcMain__settings{

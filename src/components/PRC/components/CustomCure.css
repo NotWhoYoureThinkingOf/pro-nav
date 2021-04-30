@@ -1,0 +1,111 @@
+.customCure{
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  height:100%;
+  padding:1%;
+}
+
+.customCure__details{
+  width:100%;
+  flex:0.75;
+  padding: 2rem;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.customCure__titleBox{
+  display:flex;
+  align-items: center;
+  gap:1rem;
+}
+
+.customCure__title{
+  font-size:2.5rem;
+  font-weight:500;
+  /* padding: 25px 0; */
+}
+
+.customCure__titleBox > svg{
+  font-size:3.5rem;
+  color:rgb(104, 250, 255)
+}
+
+.customCure__time{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  width:90%;
+  /* gap:15px; */
+  /* flex:0.5; */
+}
+
+.customCure__timer{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  /* flex:0.5; */
+}
+
+.customCure__timer h2{
+  font-size:2.5rem;
+}
+
+.customCure__timer > .MuiSvgIcon-root{
+  font-size:4rem;
+  color:#5cb85c;
+}
+
+.customCure__heating{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  /* flex:0.5; */
+}
+
+.customCure__heating h2{
+  font-size:2.5rem;
+}
+
+.customCure__heating > svg{
+  font-size:3.5rem;
+  /* color:rgba(255, 17, 0, 0.89) */
+}
+
+.customCure__processing{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+
+.customCure__processing h2{
+  font-size:2.1rem;
+}
+
+.customCure__processing > svg{
+  font-size:4rem;
+  color:rgba(255, 17, 0, 0.89)
+}
+
+.customCure__cancel{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:#555;
+  flex:0.25;
+  text-decoration: none;
+  transition:all 0.1s ease;
+  border-radius:10px;
+}
+
+.customCure__cancel:hover{
+  background:#666;
+}
+
+.customCure__cancel h2{
+  font-size:2.5rem;
+  color:white;
+}

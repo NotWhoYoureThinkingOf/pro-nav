@@ -6,6 +6,7 @@ import { Link, Switch, Route, useLocation } from "react-router-dom";
 import Cure from "./components/Cure";
 import { selectCureResin } from "../../features/cureResin/cureResinSlice";
 import { useSelector } from "react-redux";
+import Info from "./components/Info";
 import Sprintray from "./components/Sprintray";
 import Sprintray2 from "./components/Sprintray2";
 import Keystone from "./components/Keystone";
@@ -16,6 +17,7 @@ import Dentca2 from "./components/Dentca2";
 import NextDent from "./components/NextDent";
 import NextDent2 from "./components/NextDent2";
 import Custom from "./components/Custom";
+import CustomCure from "./components/CustomCure";
 
 const PRCMain = () => {
   const location = useLocation();
@@ -38,11 +40,18 @@ const PRCMain = () => {
             <Route exact path={`/prc`}>
               <div className="prcMain__firstScreen">
                 <div className="prcMain__firstStart">
-                  <div className="prcMain__settings">
+                  <Link to="/prc/info" className="prcMain__settings">
                     <Build />
-                  </div>
-                  <Link to="/prc/cure" className="prcMain__startButton">
-                    <h2>{resin?.resin ? resin.resin : "Die and Model"}</h2>
+                  </Link>
+                  <Link
+                    to={
+                      resin?.resin === "Custom Profile"
+                        ? `/prc/customCure`
+                        : `/prc/cure`
+                    }
+                    className="prcMain__startButton"
+                  >
+                    <h2>{resin?.resin ? resin?.resin : "Die and Model"}</h2>
                     <div className="prcMain__startButtonRepeat">
                       <Repeat />
                     </div>
@@ -69,6 +78,14 @@ const PRCMain = () => {
                   </Link>
                 </div>
               </div>
+            </Route>
+
+            <Route exact path={`/prc/info`}>
+              <Info />
+            </Route>
+
+            <Route exact path={`/prc/customCure`}>
+              <CustomCure />
             </Route>
 
             <Route exact path={`/prc/custom`}>

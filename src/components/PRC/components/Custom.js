@@ -2,10 +2,23 @@ import React, { useState } from "react";
 import "./Custom.css";
 import { Link } from "react-router-dom";
 import { Add, Home, Remove, Timer, Whatshot } from "@material-ui/icons";
+import { grab } from "../../../features/cureResin/cureResinSlice";
+import { useDispatch } from "react-redux";
 
 const Custom = () => {
+  const dispatch = useDispatch();
   const [time, setTime] = useState(10);
   const [heat, setHeat] = useState(30);
+
+  const getCustomSpecs = () => {
+    dispatch(
+      grab({
+        resin: "Custom Profile",
+        customTime: time,
+        customHeat: heat,
+      })
+    );
+  };
 
   const addTime = () => {
     if (time >= 60) {
@@ -76,9 +89,13 @@ const Custom = () => {
           </div>
         </div>
       </div>
-      <div className="custom__start">
+      <Link
+        to="/prc/customCure"
+        className="custom__start"
+        onClick={getCustomSpecs}
+      >
         <h2>Start</h2>
-      </div>
+      </Link>
     </div>
   );
 };
