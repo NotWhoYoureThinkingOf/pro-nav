@@ -27,7 +27,7 @@ const PrintFromRayware = () => {
       <div className="p95Print__details">
         <div className="p95Print__detailsContainer">
           <div className="p95Print__detailsLeft">
-            <img className="p95Print__stl" src={stl} />
+            <img className="p95Print__stl" src={stl} alt="stl file" />
           </div>
           <div className="p95Print__detailsRight">
             <div className="p95Print__filename">

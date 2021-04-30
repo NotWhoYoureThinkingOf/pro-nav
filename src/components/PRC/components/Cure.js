@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Cure.css";
-import { Timer, HotTub } from "@material-ui/icons";
+import { Timer } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import { selectCureResin } from "../../../features/cureResin/cureResinSlice";
 import { useSelector } from "react-redux";
@@ -9,10 +9,6 @@ import { BsFillDropletFill } from "react-icons/bs";
 
 const Cure = () => {
   const resin = useSelector(selectCureResin);
-
-  useEffect(() => {
-    console.log(resin);
-  }, []);
 
   return (
     <div className="cure">

@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Dreve.css";
 import { Link } from "react-router-dom";
-import { ChevronLeft, Home } from "@material-ui/icons";
+import { Home } from "@material-ui/icons";
 import { grab } from "../../../features/cureResin/cureResinSlice";
 import { useDispatch } from "react-redux";
 
 const Dreve = () => {
-  const [selectedResin, setSelectedResin] = useState("");
   const dispatch = useDispatch();
 
   const getResin = (e) => {
-    setSelectedResin(e.target.innerText);
     dispatch(grab({ resin: e.target.innerText }));
   };
 

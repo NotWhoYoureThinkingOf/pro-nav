@@ -8,14 +8,7 @@ import {
   Visibility,
   Pause,
 } from "@material-ui/icons";
-import {
-  Link,
-  Switch,
-  Route,
-  useHistory,
-  useLocation,
-  useParams,
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const UsbFinal = () => {
   return (
@@ -38,7 +31,7 @@ const UsbFinal = () => {
       <div className="usbFinal__details">
         <div className="usbFinal__detailsContainer">
           <div className="usbFinal__detailsLeft">
-            <img className="usbFinal__stl" src={stl} />
+            <img className="usbFinal__stl" src={stl} alt="stl file" />
           </div>
           <div className="usbFinal__detailsRight">
             <div className="usbFinal__filename">

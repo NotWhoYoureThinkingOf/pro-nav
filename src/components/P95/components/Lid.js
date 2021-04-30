@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Lid.css";
-import { ChevronLeft, ChevronRight } from "@material-ui/icons";
+import { ChevronLeft } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 const Lid = () => {

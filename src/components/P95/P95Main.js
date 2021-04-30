@@ -18,14 +18,7 @@ import {
   AccountBox,
   GetApp,
 } from "@material-ui/icons";
-import {
-  Link,
-  Switch,
-  Route,
-  useHistory,
-  useLocation,
-  useParams,
-} from "react-router-dom";
+import { Link, Switch, Route, useLocation } from "react-router-dom";
 import keyboardLetters from "../../keyboard";
 import WifiStatus from "./components/WifiStatus";
 import About from "./components/About";
@@ -42,8 +35,6 @@ import TankHeating from "./components/TankHeating";
 import ReinforcedSupports from "./components/ReinforcedSupports";
 
 const P95Main = () => {
-  const params = useParams();
-  const history = useHistory();
   const location = useLocation();
 
   const [firstRow, setFirstRow] = useState([]);

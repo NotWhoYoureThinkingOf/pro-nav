@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Sprintray2.css";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight, Home } from "@material-ui/icons";
-import {
-  grab,
-  release,
-  selectCureResin,
-} from "../../../features/cureResin/cureResinSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { ChevronLeft, Home } from "@material-ui/icons";
+import { grab } from "../../../features/cureResin/cureResinSlice";
+import { useDispatch } from "react-redux";
 
 const Sprintray2 = () => {
-  const [selectedResin, setSelectedResin] = useState("");
   const dispatch = useDispatch();
 
   const getResin = (e) => {
-    setSelectedResin(e.target.innerText);
     dispatch(grab({ resin: e.target.innerText }));
   };
 

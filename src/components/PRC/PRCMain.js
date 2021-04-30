@@ -139,24 +139,3 @@ const PRCMain = () => {
 };
 
 export default PRCMain;
-
-{
-  /* <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>SR Model Resins</h3>
-                  </Link>
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>SR Surgical Guide</h3>
-                  </Link>
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>SR Castable</h3>
-                  </Link>
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>SR Denture Base</h3>
-                  </Link>
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>SR Try-in</h3>
-                  </Link>
-                  <Link to="/prc" onClick={(e) => getResin(e)}>
-                    <h3>Custom</h3>
-                  </Link> */
-}
