@@ -964,3 +964,61 @@
     font-size:1.5rem;
   }
 }
+
+@media screen and (max-width: 500px){
+  .p95Warning{
+    display:none;
+  }
+
+  .p95Main__screen {
+    height: 100%;
+    border:none;
+    border-radius:0;
+  }
+
+  .p95Main__print p{
+    border-radius:0;
+  }
+
+  .p95Main__detailsTop h2{
+    font-size:2rem;
+  }
+
+  .p95Main__detailsTop p{
+    text-align:center;
+    width:90%;
+  }
+
+  .p95Main__detailsCenter {    
+    padding: 1rem 1.5rem;
+  }
+
+  .p95Main__detailsCenter h3{
+    font-size:1.1rem;
+  }
+  .p95Main__detailsCenter p{
+    font-size:1rem;
+  }
+
+  .p95Main__detailsWifi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex:0.5;
+  }
+
+  .p95Main__detailsWifi a{
+    font-size:1rem;
+    text-align: center;
+  }
+
+  .p95Main__Dash{
+    flex:0.5;
+  }
+
+  .p95Main__detailsDash h4 {
+    font-size: 1rem;
+    width:5rem;
+    text-align:center
+  }
+}
