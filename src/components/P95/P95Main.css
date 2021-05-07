@@ -974,11 +974,16 @@
     height: 100%;
     border:none;
     border-radius:0;
+    overflow:auto;
   }
 
   .p95Main__print p{
     border-radius:0;
   }
+
+  .p95Main__details {
+    height: 70%;
+}
 
   .p95Main__detailsTop h2{
     font-size:2rem;
