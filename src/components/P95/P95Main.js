@@ -33,6 +33,7 @@ import Language from "./components/Language";
 import Ethernet from "./components/Ethernet";
 import TankHeating from "./components/TankHeating";
 import ReinforcedSupports from "./components/ReinforcedSupports";
+import History from "./components/History";
 
 const P95Main = () => {
   const location = useLocation();
@@ -74,9 +75,8 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        ProCure should be finished. Let me know if there's any bugs. Same with
-        printer. Should be good to go. If anything breaks, just go back to the
-        main page and/or refresh.
+        5/7/21: Added history menues. Looking into small details. Let me know if
+        you see any bugs. No changes to ProCure since last deploy.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
@@ -99,9 +99,9 @@ const P95Main = () => {
                 <Link to="/p95" className="p95Main__print">
                   <p>Print</p>
                 </Link>
-                <div className="p95Main__print">
+                <Link to="/p95/history" className="p95Main__print">
                   <p>History</p>
-                </div>
+                </Link>
                 <div className="p95Main__print">
                   <p>Settings</p>
                 </div>
@@ -589,9 +589,9 @@ const P95Main = () => {
                 <div className="p95Main__print">
                   <p>Print</p>
                 </div>
-                <div className="p95Main__print">
+                <Link to="/p95/history" className="p95Main__print">
                   <p>History</p>
-                </div>
+                </Link>
                 <Link to="/p95/settings" className="p95Main__print">
                   <p>Settings</p>
                 </Link>
@@ -632,6 +632,10 @@ const P95Main = () => {
                   )}
                 </div>
               </div>
+            </Route>
+
+            <Route exact path={`/p95/history`}>
+              <History />
             </Route>
           </Switch>
         </div>

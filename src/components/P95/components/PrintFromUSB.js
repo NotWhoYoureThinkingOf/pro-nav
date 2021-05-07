@@ -10,9 +10,9 @@ const PrintFromUSB = () => {
         <Link to="/p95" className="p95usb__print">
           <p>Print</p>
         </Link>
-        <div className="p95usb__print">
+        <Link to="/p95/history" className="p95usb__print">
           <p>History</p>
-        </div>
+        </Link>
 
         <div className="p95usb__print">
           <p>External</p>

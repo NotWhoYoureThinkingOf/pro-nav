@@ -17,13 +17,13 @@ const UsbFinal = () => {
         <Link to="/p95" className="usbFinal__print">
           <p>Print</p>
         </Link>
-        <div className="usbFinal__print">
+        <Link to="/p95/history" className="usbFinal__print">
           <p>History</p>
-        </div>
+        </Link>
 
-        <div className="usbFinal__print">
+        <Link to="/p95/print-from-usb" className="usbFinal__print">
           <p>External</p>
-        </div>
+        </Link>
         <Link to="/p95/settings" className="usbFinal__print">
           <p>Settings</p>
         </Link>

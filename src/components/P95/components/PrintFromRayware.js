@@ -17,9 +17,9 @@ const PrintFromRayware = () => {
         <Link to="/p95" className="p95Main__print">
           <p>Print</p>
         </Link>
-        <div className="p95Main__print">
+        <Link to="/p95/history" className="p95Main__print">
           <p>History</p>
-        </div>
+        </Link>
         <Link to="/p95/settings" className="p95Main__print">
           <p>Settings</p>
         </Link>
@@ -65,10 +65,10 @@ const PrintFromRayware = () => {
         </div>
       </div>
       <div className="p95Print__controls">
-        <div className="p95Print__cancel control">
+        <Link to="/p95" className="p95Print__cancel control">
           <Close />
           <p>Cancel</p>
-        </div>
+        </Link>
         <div className="p95Print__layer control">
           <Visibility />
           <p>Layer</p>
