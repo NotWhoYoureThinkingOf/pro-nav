@@ -628,9 +628,9 @@
   text-decoration: none;
 }
 
-.enter{
+/* .enter{
   
-}
+} */
 
 .capitalized{
   text-transform:uppercase;
@@ -982,7 +982,7 @@
   }
 
   .p95Main__details {
-    height: 70%;
+    height: 80%;
 }
 
   .p95Main__detailsTop h2{
