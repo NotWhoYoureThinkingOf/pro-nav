@@ -23,6 +23,8 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  pointer-events:none;
+  user-select: none;
 }
 
 .pwdMain__bg img {
@@ -33,4 +35,39 @@
   top: 7%;
   z-index: 0;
   filter: blur(10px);
+}
+
+.pwdMain__container{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.pwdMain__screen{
+  z-index:100;
+  background: black;
+  border-radius: 15px;
+  height:550px;
+  width:800px;
+  border:5px solid white;
+  overflow-y:scroll;
+  position:relative;
+}
+
+.pwdMain__screen::-webkit-scrollbar{
+  display:none;
+}
+
+.pwdIntro__header{
+  display:flex;
+}
+
+.pwdIntro__washOptions{
+  display:flex;
+}
+
+.pwdIntro__body{
+  display:flex;
 }

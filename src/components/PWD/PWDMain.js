@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PWDMain.css";
+import PWDIntro from "./components/PWDIntro";
 import pwd from '../../assets/PWD.png'
 import { Link } from "react-router-dom";
 
 const PWDMain = () => {
+  const [intro, setIntro] = useState(true)
+
   return (
     <div className="pwdMain">
       <Link to="/" className="pwdMain__back">
@@ -12,8 +15,15 @@ const PWDMain = () => {
       <div className="pwdMain__bg">
         <img src={pwd} alt="" />
       </div>
+      <div className="pwdMain__container">
+        <div className="pwdMain__screen">
+          {intro && (
+            <PWDIntro />
+          )}
 
-      <h1>pwd main page</h1>
+        </div>
+      </div>
+
     </div>
   );
 };
