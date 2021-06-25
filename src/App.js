@@ -4,11 +4,16 @@ import { Switch, Route } from "react-router-dom";
 import MainScreen from "./components/mainScreen/MainScreen";
 import P95Main from "./components/P95/P95Main";
 import PRCMain from "./components/PRC/PRCMain";
+import PWDMain from "./components/PWD/PWDMain";
 
 function App() {
   return (
     <div className="app">
       <Switch>
+        <Route path="/pwd">
+          <PWDMain />
+        </Route>
+
         <Route path="/prc">
           <PRCMain />
         </Route>

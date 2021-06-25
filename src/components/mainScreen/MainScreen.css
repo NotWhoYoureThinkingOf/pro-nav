@@ -56,6 +56,20 @@
   filter:drop-shadow(-1px 15px 5px rgba(0,0,0,0.8) )
 }
 
+.mainScreen__pwd{
+  display:flex;
+  align-items:flex-end;
+  border:5px solid rgba(0,0,0,.2);
+  padding: 50px 50px;
+  border-radius:30px;
+}
+
+.mainScreen__pwd img{
+  object-fit:contain;
+  width: 400px;
+  filter:drop-shadow(-1px 15px 5px rgba(0,0,0,0.8) )
+}
+
 .mainScreen__prc{
   display:flex;
   align-items:flex-end;
@@ -69,3 +83,28 @@
   width:280px;
 }
 
+@media screen and (max-width:1600px){
+  .mainScreen__containerTop h1 {
+    font-size: 4rem;
+  }
+
+  .mainScreen__bottomCards {
+    gap: 3rem;
+  }
+
+  .mainScreen__p95 img {
+    width: 200px;
+  }
+
+  .mainScreen__prc img{
+    width:180px;
+  }
+
+  .mainScreen__pwd{
+    padding: 50px 60px;
+  }
+  
+  .mainScreen__pwd img{
+    width: 273px;
+  }
+}

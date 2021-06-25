@@ -2,6 +2,7 @@ import React from "react";
 import "./MainScreen.css";
 import p95 from "../../assets/P95.png";
 import prc from "../../assets/PRC.png";
+import pwd from '../../assets/PWD.png'
 import { Link } from "react-router-dom";
 
 const MainScreen = () => {
@@ -15,11 +16,15 @@ const MainScreen = () => {
         <div className="mainScreen__containerBottom">
           <div className="mainScreen__bottomCards">
             <Link to="/p95" className="mainScreen__p95">
-              <img src={p95} alt="" />
+              <img src={p95} alt="p95" />
+            </Link>
+
+            <Link to="/pwd" className="mainScreen__pwd">
+              <img src={pwd} alt="pwd" />
             </Link>
 
             <Link to="/prc" className="mainScreen__prc">
-              <img src={prc} alt="" />
+              <img src={prc} alt="prc" />
             </Link>
           </div>
         </div>

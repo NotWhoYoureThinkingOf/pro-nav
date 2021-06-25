@@ -75,8 +75,7 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        5/7/21: Added history menues. Looking into small details. Let me know if
-        you see any bugs. No changes to ProCure since last deploy.
+        6/25/21: Started adding ProWash section.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
