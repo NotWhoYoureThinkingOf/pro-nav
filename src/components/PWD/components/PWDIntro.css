@@ -1,3 +1,101 @@
-.pwdIntro{
-    color:white;
+.pwdIntro {
+  color: white;
+}
+
+.pwdIntro__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pwdIntro__settings {
+  display: flex;
+  align-items: center;
+  background: #555;
+  padding: 1.8rem;
+  border-radius: 10px;
+  /* gap: 2rem; */
+}
+
+.pwdIntro__washOptions {
+  display: flex;
+  gap: 2.2rem;
+}
+
+.pwdIntro__basketContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+}
+
+.pwdIntro__basket {
+  width: 5rem;
+}
+
+.pwdIntro__platformContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.pwdIntro__platform {
+  width: 5.5rem;
+}
+
+.pwdIntro__body {
+  display: flex;
+  gap: 1rem;
+}
+
+.pwdIntro__res1 {
+  display: flex;
+  flex: 0.5;
+  justify-content: flex-end;
+}
+
+.pwdIntro__res1Text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pwdIntro__res1Text p {
+  font-size: 1.5rem;
+}
+
+.pwdIntro__res1Text h3 {
+  font-size: 3rem;
+}
+
+.pwdIntro__res1Image {
+  position: relative;
+}
+
+.pwdIntro__reservoir {
+  width: 7rem;
+}
+
+.pwdIntro__fluid {
+  position: absolute;
+  width: 6.4rem;
+  left: 5%;
+  top: 14.5%;
+}
+
+.pwdIntro__arrow {
+  position: absolute;
+  width: 1.3rem;
+  left: -21%;
+  top: 9%;
+  transform: rotate(180deg);
+}
+
+.pwdIntro__res2 {
+  flex: 0.5;
 }
