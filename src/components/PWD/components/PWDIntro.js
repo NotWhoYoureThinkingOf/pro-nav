@@ -39,7 +39,11 @@ const PWDIntro = () => {
                 </div>
                 
                 <div className="pwdIntro__res2">
-                <div className="pwdIntro__res2Image"></div>
+                
+                <div className="pwdIntro__res2Image"><img className="pwdIntro__reservoir" src={reservoir} />
+                <img className="pwdIntro__fluid" src={fluid}></img>
+                <img className="pwdIntro__arrow2" src={arrow}></img>
+                </div>
                 <div className="pwdIntro__res2Text">
                     <p>Reservoir 2</p>
                     <h2>Okay</h2>
