@@ -75,7 +75,7 @@ const P95Main = () => {
         <img src={bg} alt="" />
       </div>
       <h1 className="p95Warning">
-        6/25/21: Started adding ProWash section.
+        7/14/21: Got first screen of prowash added. Not functional yet though.
       </h1>
       <div className="p95Main__logo">
         <img src={logo} alt="" />
